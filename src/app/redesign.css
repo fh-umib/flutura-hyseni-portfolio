@@ -739,6 +739,8 @@ section[id] {
 
 /* ---------- Mobile ---------- */
 
+/* ---------- Mobile ---------- */
+
 @media (max-width: 760px) {
   .quote-inner {
     grid-template-columns: 1fr;
@@ -803,7 +805,9 @@ section[id] {
   .featured-project,
   .featured-project-reverse {
     grid-template-columns: minmax(0, 1fr);
-    grid-template-areas: "media" "detail";
+    grid-template-areas:
+      "media"
+      "detail";
     gap: 22px;
     padding-block: 44px 52px;
   }
@@ -811,7 +815,34 @@ section[id] {
   .featured-project .project-media,
   .featured-project-reverse .project-media {
     order: -1;
-    margin-inline: -16px;
+    width: 100%;
+    min-width: 0;
+    margin-inline: 0;
+  }
+
+  .project-media {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .project-media-chrome {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .project-media-frame {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: var(--surface);
+  }
+
+  .project-media-image {
+    object-fit: contain !important;
+    object-position: center center !important;
   }
 
   .project-title {
@@ -822,10 +853,6 @@ section[id] {
   .project-title span {
     min-width: 0;
     overflow-wrap: anywhere;
-  }
-
-  .project-media-frame {
-    aspect-ratio: 16 / 10;
   }
 
   .project-number {

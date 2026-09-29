@@ -26,6 +26,9 @@ export const metadata: Metadata = {
   title: "Flutura Hyseni | Computer Science & Engineering",
   description:
     "The portfolio of Flutura Hyseni, a Computer Science & Engineering student.",
+    icons: {
+    icon: "/icon.svg",
+    },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
