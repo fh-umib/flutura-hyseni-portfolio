@@ -8,7 +8,10 @@ export type FeaturedProject = {
   name: string;
   subtitle: string;
   type: string;
-  liveDemo: string;
+  liveDemo?: string;
+  githubUrl?: string;
+  award?: string;
+  team?: string;
   imageSrc: string;
   description: string;
   groups: { label: string; items: string[] }[];
@@ -51,7 +54,7 @@ export default function FeaturedProjectSlider({
     >
       <article
         key={activeProject.number}
-        className={`featured-project project-slide project-slide-${direction}${activeIndex === 1 ? " featured-project-reverse" : ""}`}
+        className={`featured-project project-slide project-slide-${direction}${activeIndex % 2 === 1 ? " featured-project-reverse" : ""}${activeProject.name === "Hi5" ? " project-hi5" : ""}`}
         role="group"
         aria-roledescription="slide"
         aria-label={`${activeIndex + 1} of ${projects.length}: ${activeProject.name}`}
@@ -68,6 +71,16 @@ export default function FeaturedProjectSlider({
             {activeProject.name}
             <span>{activeProject.subtitle}</span>
           </h3>
+          {(activeProject.award || activeProject.team) && (
+            <div className="project-meta">
+              {activeProject.award && (
+                <p className="project-award">{activeProject.award}</p>
+              )}
+              {activeProject.team && (
+                <p className="project-team">{activeProject.team}</p>
+              )}
+            </div>
+          )}
           <p className="project-description">{activeProject.description}</p>
 
           <div className="project-groups">
@@ -93,17 +106,32 @@ export default function FeaturedProjectSlider({
           </div>
 
           <div className="project-actions">
-            <a
-              href={activeProject.liveDemo}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={`${activeProject.name} live demo (opens in a new tab)`}
-            >
-              Live Demo
-              <svg aria-hidden="true" viewBox="0 0 20 20" fill="none">
-                <path d="M5 15 15 5M6 5h9v9" />
-              </svg>
-            </a>
+            {activeProject.liveDemo && (
+              <a
+                href={activeProject.liveDemo}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${activeProject.name} live demo (opens in a new tab)`}
+              >
+                Live Demo
+                <svg aria-hidden="true" viewBox="0 0 20 20" fill="none">
+                  <path d="M5 15 15 5M6 5h9v9" />
+                </svg>
+              </a>
+            )}
+            {activeProject.githubUrl && (
+              <a
+                href={activeProject.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${activeProject.name} GitHub repository (opens in a new tab)`}
+              >
+                View GitHub
+                <svg aria-hidden="true" viewBox="0 0 20 20" fill="none">
+                  <path d="M5 15 15 5M6 5h9v9" />
+                </svg>
+              </a>
+            )}
           </div>
         </div>
 
@@ -118,7 +146,7 @@ export default function FeaturedProjectSlider({
             <Image
               className="project-media-image"
               src={activeProject.imageSrc}
-              alt={`${activeProject.name} application screenshot`}
+              alt={`${activeProject.name} ${activeProject.name === "Hi5" ? "team coordination workflow diagram" : "application screenshot"}`}
               fill
               sizes="(max-width: 760px) 100vw, (max-width: 1200px) 48vw, 560px"
             />

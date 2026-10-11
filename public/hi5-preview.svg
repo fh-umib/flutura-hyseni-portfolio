@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" fill="none">
+  <rect width="1280" height="720" fill="#0E0C14"/>
+  <g stroke="#2A2638" stroke-width="1" opacity=".65">
+    <path d="M0 80.5H1280M0 160.5H1280M0 240.5H1280M0 320.5H1280M0 400.5H1280M0 480.5H1280M0 560.5H1280M0 640.5H1280"/>
+    <path d="M80.5 0V720M160.5 0V720M240.5 0V720M320.5 0V720M400.5 0V720M480.5 0V720M560.5 0V720M640.5 0V720M720.5 0V720M800.5 0V720M880.5 0V720M960.5 0V720M1040.5 0V720M1120.5 0V720M1200.5 0V720"/>
+  </g>
+  <path d="M42 45H1238V675H42z" stroke="#39334B"/>
+  <text x="78" y="104" fill="#A78BFA" font-family="monospace" font-size="16" letter-spacing="3">HI5 / TEAM COORDINATION</text>
+  <text x="78" y="158" fill="#EFEDF5" font-family="Arial, sans-serif" font-size="38" font-weight="500">Hi5</text>
+  <text x="78" y="188" fill="#A7A3B8" font-family="Arial, sans-serif" font-size="18">AI Team Leader</text>
+  <text x="1200" y="103" text-anchor="end" fill="#A78BFA" font-family="monospace" font-size="13">3rd Place · AI Hackathon Kosovo 2026</text>
+  <g stroke="#6E6685" stroke-width="2">
+    <path d="M258 373H338M490 373H570M722 373H802M954 373H1034"/>
+  </g>
+  <g fill="#A78BFA">
+    <path d="m330 365 10 8-10 8v-16Zm152 0 10 8-10 8v-16Zm232 0 10 8-10 8v-16Zm232 0 10 8-10 8v-16Z"/>
+  </g>
+  <g>
+    <rect x="78" y="315" width="180" height="116" rx="2" fill="#14111D" stroke="#554A70"/>
+    <rect x="338" y="315" width="152" height="116" rx="2" fill="#14111D" stroke="#A78BFA"/>
+    <rect x="570" y="315" width="152" height="116" rx="2" fill="#14111D" stroke="#554A70"/>
+    <rect x="802" y="315" width="152" height="116" rx="2" fill="#14111D" stroke="#554A70"/>
+    <rect x="1034" y="315" width="168" height="116" rx="2" fill="#14111D" stroke="#554A70"/>
+  </g>
+  <g fill="#A78BFA" font-family="monospace" font-size="11" letter-spacing="1">
+    <text x="96" y="342">01 / INPUT</text>
+    <text x="356" y="342">02 / PLAN</text>
+    <text x="588" y="342">03 / VALIDATE</text>
+    <text x="820" y="342">04 / APPROVE</text>
+    <text x="1052" y="342">05 / EXECUTE</text>
+  </g>
+  <g fill="#EFEDF5" font-family="Arial, sans-serif" font-size="17">
+    <text x="96" y="379">Leader</text>
+    <text x="356" y="379">AI Agent</text>
+    <text x="588" y="379">Code Rules</text>
+    <text x="820" y="379">Human</text>
+    <text x="1052" y="379">Team</text>
+  </g>
+  <g fill="#7B7690" font-family="monospace" font-size="11">
+    <text x="96" y="405">Client request</text>
+    <text x="356" y="405">Plan + tasks</text>
+    <text x="588" y="405">Capacity + rules</text>
+    <text x="820" y="405">Final decision</text>
+    <text x="1052" y="405">Confirm + track</text>
+  </g>
+  <path d="M78 493H1202" stroke="#39334B"/>
+  <text x="78" y="535" fill="#A7A3B8" font-family="monospace" font-size="13">AI PLANS.</text>
+  <text x="190" y="535" fill="#A78BFA" font-family="monospace" font-size="13">CODE CHECKS.</text>
+  <text x="350" y="535" fill="#A7A3B8" font-family="monospace" font-size="13">HUMAN APPROVES.</text>
+  <g fill="#7B7690" font-family="monospace" font-size="11">
+    <text x="78" y="625">ROLE-BASED REPORTING</text>
+    <text x="1202" y="625" text-anchor="end">WORKER ACCEPT / CAN'T · LIVE PROGRESS · REASSIGNMENT</text>
+  </g>
+</svg>

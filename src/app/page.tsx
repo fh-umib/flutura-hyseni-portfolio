@@ -115,7 +115,7 @@ const featuredProjects: FeaturedProject[] = [
     liveDemo: "https://md-creative-event-booking-system.vercel.app/",
     imageSrc: "/md-creative-preview.png",
     description:
-      "A booking and business management platform built around the real workflow of an event-services business, connecting the public booking experience with internal administration.",
+      "A booking and management platform shaped around an event-services business, connecting customer bookings with day-to-day administration.",
     groups: [
       {
         label: "Public experience",
@@ -154,6 +154,65 @@ const featuredProjects: FeaturedProject[] = [
       "PostgreSQL",
       "JWT",
       "Nodemailer",
+    ],
+  },
+  {
+    number: "03",
+    name: "Hi5",
+    subtitle: "AI Team Leader",
+    type: "AI Agent / Hackathon Project",
+    team: "Team Hi5",
+    award: "3rd Place · AI Hackathon Kosovo 2026",
+    githubUrl: "https://github.com/VocaDev/hi5-team-leader",
+    imageSrc: "/hi5-preview.svg",
+    description:
+      "An AI-powered team coordination system that turns a client request into a validated execution plan. The agent prepares the plan, deterministic code checks capacity and operational rules, and a human leader approves it before workers receive detailed tasks with confirmation and progress tracking.",
+    groups: [
+      {
+        label: "Workflow",
+        items: [
+          "Free-text client request",
+          "Capacity and rule validation",
+          "Task assignment",
+          "Human approval",
+          "Worker ACCEPT / CAN'T",
+          "Live progress tracking",
+          "Safe reassignment when needed",
+        ],
+      },
+      {
+        label: "System design",
+        items: [
+          "AI understands, plans and writes",
+          "Deterministic code validates rules",
+          "Human remains in control",
+          "Telegram worker communication",
+          "Role-based reporting",
+          "AI plans. Code checks. Human approves.",
+        ],
+      },
+      {
+        label: "My contribution",
+        items: [
+          "Event-domain data and operational rules",
+          "Expected test scenarios",
+          "Real-business problem validation",
+          "Interview and problem-validation input",
+          "Demo and pitch support",
+        ],
+      },
+    ],
+    technologies: [
+      "Python",
+      "FastAPI",
+      "Uvicorn",
+      "Anthropic / Claude",
+      "Telegram Bot API",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "JSON",
+      "pytest",
     ],
   },
 ];
@@ -286,10 +345,6 @@ export default function Home() {
               <p className="eyebrow hero-intro">Hello, I&apos;m</p>
 
               <h1 id="hero-title">Flutura Hyseni</h1>
-
-              <p className="hero-role">
-                Final-Year Computer Science &amp; Engineering Student
-              </p>
 
               <p className="hero-description">
                 I build full-stack applications and keep exploring how data and
