@@ -296,13 +296,21 @@ const leadershipEntries = [
 
 const selectedActivities = [
   {
+    name: "3rd Place — Agentic AI for Business",
+    detail:
+      "Kosovo Hackathon 2026 · Genpact × Agilyti · Team Hi5 · October 2–4, 2026",
+    awardLabel: "AWARD · 3RD PLACE",
+  },
+  {
     name: "JunctionX Regional Hackathon — DigiCamp & Digital Skills Festival 2026",
     detail: "21–23 May 2026 · Innovation and Training Park (ITP), Prizren",
+    awardLabel: "",
   },
   {
     name: "International Telecollaboration Project 2026",
     detail:
       "International online collaboration in Computer Science & Engineering",
+    awardLabel: "",
   },
 ];
 
@@ -791,7 +799,13 @@ export default function Home() {
 
                     <h3>Gymnasium &quot;Eqrem Çabej&quot;</h3>
 
-                    <p className="education-meta">High School · Completed</p>
+                    <p className="education-institution">Vushtrri, Kosovo</p>
+
+                    <p className="education-meta">
+                      High School · Natural Sciences · GPA 5.0 / 5.0
+                    </p>
+
+                    <p className="education-meta">Completed</p>
                   </div>
                 </li>
 
@@ -844,7 +858,18 @@ export default function Home() {
                         {String(index + 1).padStart(2, "0")}
                       </span>
 
-                      <div>
+                      <div
+                        className={
+                          activity.awardLabel
+                            ? "activity-copy activity-copy-award"
+                            : "activity-copy"
+                        }
+                      >
+                        {activity.awardLabel && (
+                          <span className="activity-award-label">
+                            {activity.awardLabel}
+                          </span>
+                        )}
                         <h4>{activity.name}</h4>
                         <p>{activity.detail}</p>
                       </div>
